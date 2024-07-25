@@ -8,6 +8,9 @@ They can then extinguish 🧯 me by saying "`terminator`".
 
 See example pronounciation in ![example_americano_terminator.ogg](example_americano_terminator.ogg) 
 
+![image](https://github.com/user-attachments/assets/82877f15-2ce4-4e55-ac7d-972b66092fb3)
+
+
 ### Notes 
 
  - False positives are common so this is just a toy.
