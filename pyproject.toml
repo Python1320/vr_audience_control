@@ -1,0 +1,13 @@
+[project]
+name = "vr-audience-control"
+version = "0.1.0"
+description = "Hot word detection for VRChat via OSC"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.4.4",
+    "pvporcupine~=1.9.0",
+    "pyaudiowpatch>=0.2.12.8",
+    "python-osc>=1.10.2",
+    "samplerate>=0.2.4",
+]

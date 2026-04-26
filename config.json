@@ -1,0 +1,40 @@
+{
+    "osc": {
+        "host": "127.0.0.1",
+        "port": 9000
+    },
+    "keywords": {
+        "porcupine": {
+            "sensitivity": 0.5,
+            "triggers": {
+                "/avatar/parameters/fire_effect": false
+            }
+        },
+        "americano": {
+            "sensitivity": 0.5,
+            "triggers": {
+                "/avatar/parameters/fire_effect": true,
+                "/avatar/parameters/water_effect": false
+            },
+            "commands": [
+                "valvecmd.exe aowl ignite #me 5"
+            ]
+        },
+        "bumblebee": {
+            "sensitivity": 0.5,
+            "triggers": {
+                "/avatar/parameters/fire_effect": false,
+                "/avatar/parameters/water_effect": true
+            }
+        },
+        "terminator": {
+            "sensitivity": 0.5,
+            "triggers": {
+                "/avatar/parameters/fire_effect": false
+            },
+            "commands": [
+                "valvecmd.exe kill"
+            ]
+        }
+    }
+}

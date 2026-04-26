@@ -1,4 +1,0 @@
-numpy
-PyAudioWPatch
-librosa
-python-osc
