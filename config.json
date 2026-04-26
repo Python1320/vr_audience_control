@@ -4,12 +4,6 @@
         "port": 9000
     },
     "keywords": {
-        "porcupine": {
-            "sensitivity": 0.5,
-            "triggers": {
-                "/avatar/parameters/fire_effect": false
-            }
-        },
         "americano": {
             "sensitivity": 0.5,
             "triggers": {
