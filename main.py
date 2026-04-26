@@ -45,7 +45,7 @@ def init():
                 break
 
     print(
-        f"\nRecording from: ({default_speakers['index']}){default_speakers['name']}: {default_speakers}\n"
+        f"\nRecording from: ({default_speakers['index']}){default_speakers['name']}\n"
     )
 
     INPUT_CHANNELS = int(default_speakers["maxInputChannels"])
@@ -64,7 +64,6 @@ def init():
         frames_per_buffer=frame_sz,
     )
     SAMPLE_SIZE = pa.get_sample_size(data_format)
-    print("SAMPLE_SIZE", SAMPLE_SIZE)
     printed_ready = False
 
     resampler = samplerate.Resampler("sinc_fastest", channels=1)
@@ -128,7 +127,7 @@ def init():
 
         if result >= 0:
             name = keywords[result]
-            print("[%s] detected: %s" % (str(datetime.datetime.now()), name))
+            print("[%s] detected: %s" % (str(datetime.datetime.now().isoformat(sep=' ', timespec='seconds')), name))
 
             for address, value in config["keywords"][name]["triggers"].items():
                 client.send_message(address, value)

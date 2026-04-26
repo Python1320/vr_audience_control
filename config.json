@@ -17,7 +17,7 @@
                 "/avatar/parameters/water_effect": false
             },
             "commands": [
-                "valvecmd.exe aowl ignite #me 5"
+                "valvecmd.exe \"aowl ignite #me 5\""
             ]
         },
         "bumblebee": {
