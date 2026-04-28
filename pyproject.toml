@@ -5,9 +5,23 @@ description = "Hot word detection for VRChat via OSC"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "numpy>=2.4.4",
+    "audioop-lts>=0.2.2",
     "pvporcupine~=1.9.0",
     "pyaudiowpatch>=0.2.12.8",
     "python-osc>=1.10.2",
-    "samplerate>=0.2.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.11.0",
+    "pyright>=1.1.0",
+]
+
+[tool.ruff.format]
+indent-style = "tab"
+
+[[tool.uv.dependency-metadata]]
+name = "pvporcupine"
+requires-dist = [
+    # numpy not required
 ]

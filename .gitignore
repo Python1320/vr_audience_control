@@ -161,3 +161,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 out.wav
+debug_loopback.wav
+debug_mic.wav
